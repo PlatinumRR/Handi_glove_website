@@ -68,11 +68,16 @@ Tension string may act as a force buffer to reduce the risk of structure failure
 									This week, one of our main goals is working on our BOM.
 									<br>
 									In order to find proper drivers for our linear actuator and Peltier cooler, I tested their power consumptions: For the actuator, under 12V DC, the steady current is around 0.5A with the starting peak around 1A; for the cooler, it draws steady 3.3A of current under 0.8V DC.
-									
-									<span class="image fit"><img src="images/ActuatorCurrentTest.jpg" width="10%" height="10%" alt="" /></span>
-									<ul>Current Test of Linear Actuator</ul>
-									<span class="image fit"><img src="images/CoolerCurrentTest.jpg" width="10%" height="10%" alt="" /></span>
-									<ul>Current Test of Peltier Cooler</ul>
+									<div id="document" class="row">
+										<div class="6u 12u$(small)">
+												<span class="image fit"><img src="images/ActuatorCurrentTest.jpg" width="10%" height="10%" alt="" /></span>
+												<ul>Current Test of Linear Actuator</ul>
+										</div>
+										<div class="6u 12u$(small)">
+												<span class="image fit"><img src="images/CoolerCurrentTest.jpg" width="10%" height="10%" alt="" /></span>
+												<ul>Current Test of Peltier Cooler</ul>
+										</div>
+									</div>
 									<span class="image left"><img src="images/1.jpg" alt="" /></span>
 									After Jia-En's research on the microcontroller, I looked into the STM32 family. Since our project will be ADC intensive, our main concern is to have enough ADC channels on a single microcontroller. Among all the available microcontrollers in Digikey, STM32L1 subfamily provides the most number of ADC channels (40x12b)[1]. Thanks to Rohan for providing us with valuable suggestions in selecting the appropriate micro.
 									<br>
