@@ -63,8 +63,15 @@
 									<h2>Week Three Rport</h2>
 								</header>
 								<p>
-										In this week, I mainly contributed to study our temperature feedback components in the project. First, I conducted experiments on the temperature sensor working under various scenarios. I built a table of temperature vs resistance to get the resistance of the sensor. As the temperature goes up, the resistor value goes down. The range of resistance between 100k ohms to 3k ohms. Then, I also worked on the Peltier module to figure out the attributes for the module. The Peltier model is able to freeze or heat when flips the polarity of a power source. The model can also be attached to the glove to become part of the temperature feedback system. According to our assignment component report, the factors of temperature sensor fit for Peltier model. And the table and Peltier model attribute table can also help us to build the circuit of temperature feedback system on the robot hand and user glove in the next week. 
-										<span class="image fit"><img src="images/YaoChart01.jpg" alt="" /></span>
+										
+										Last week, I was responsible for conducting research on the characteristics of TTF-103 resistor. This is an important and indispensable step because the temperature changes have a great impact on the resistance and although TTF-103 resistor may look tiny, it’s resistance has to be precise enough to form a complete loop of the feedback control system. This can also facilitate us when doing circuit design.
+
+ 										First, I conducted experiments on the TTF-103 resistor working under various scenarios. I built a table of temperature vs resistance to reflect the temperature impact on the resistance. A simple circuit consists of only the TTF-103 and the power supply were built to measure the resistance. The resistance was calculated by taking voltage value divided by the current value, which was both measured through DMM. The heating effect was created via placing the resistor into a glass of water and boiled it gradually, whereas the freezing effect was mimicked via placing the resistor in the refrigerator. It took me a quite a long time to monitor the resistance at the temperature of every 1 Celsius interval. I observed that as the temperature went up, the resistor value went down. The range of resistance is approximately between 100k ohms to 3k ohms. 
+
+										Afterward, I also worked on the Peltier module to figure out the attributes for that module. The Peltier module is able to freeze or heat when flips the polarity of a power source. The module can also be attached to the fingertips of the glove to become part of the temperature feedback system. The table that I acquired below as well as the Peltier module attribute table can both help us build the circuit of temperature feedback system on the robot hand and user glove in the next week. 
+
+										One of our concerns as well as my goal of next week is that, since the transmitter—the temperature sensor and the receiver--the Peltier module does not coordinate with each other quite well and therefore there is a large discrepancy between the temperature transmitted by the sensor and the that received and displayed by the Peltier module, I need to delve in deep into this problem and figure out a way to ensure a complete and precise loop maybe by having a second layer of thermal-protective coating on the glove.
+										<span class="image fit"><img src="images/YaoChart02.jpg" alt="" /></span>
 										
 									</p>
 							</div>
