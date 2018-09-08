@@ -69,13 +69,13 @@ Tension string may act as a force buffer to reduce the risk of structure failure
 									<br>
 									In order to find proper drivers for our linear actuator and Peltier cooler, I tested their power consumptions: For the actuator, under 12V DC, the steady current is around 0.5A with the starting peak around 1A; for the cooler, it draws steady 3.3A of current under 0.8V DC.
 									
-									<span class="image fit"><img src="images/ActuatorCurrentTest.jpg" width="20%" height="20%" alt="" /></span>
+									<span class="image fit"><img src="images/ActuatorCurrentTest.jpg" width="10%" height="10%" alt="" /></span>
 									<ul>Current Test of Linear Actuator</ul>
-									<span class="image fit"><img src="images/CoolerCurrentTest.jpg" width="20%" height="20%" alt="" /></span>
+									<span class="image fit"><img src="images/CoolerCurrentTest.jpg" width="10%" height="10%" alt="" /></span>
 									<ul>Current Test of Peltier Cooler</ul>
-									<span class="image left"><img src="images/ActuatorTest" alt="" /></span>
+									<span class="image left"><img src="images/ActuatorTest.jpg" alt="" /></span>
 									After Jia-En's research on the microcontroller, I looked into the STM32 family. Since our project will be ADC intensive, our main concern is to have enough ADC channels on a single microcontroller. Among all the available microcontrollers in Digikey, STM32L1 subfamily provides the most number of ADC channels (40x12b)[1]. Thanks to Rohan for providing us with valuable suggestions in selecting the appropriate micro.
-									<br><span class="image left"><img src="images/Chip" alt="" /></span>
+									<br><span class="image left"><img src="images/Chip.jpg" alt="" /></span>
 									Last but not least, we planned to implement a closed loop control on the touch feedback system by placing another touch sensor between the user's finger and airbag; however, with discussion, we think it is hard to counter the pressure shift caused by temperature change, and it increases the mechanical difficulty. Instead of using film pressure sensor, placing an air pressure sensor inside the syringe might be a more robust solution for precise touch feedback control. The microcontroller can easily monitor the pressure inside the airbag and make changes accordingly.
 									<br>
 									[1] STMicroelectronics, “Ultra-low-power 32-bit MCU ARM®-based Cortex®-M3 with 512KB Flash, 80KB SRAM, 16KB EEPROM, LCD, USB, ADC, DAC,” STM32L151xE STM32L152xE datasheet, n.d.. [Revised Aug. 2017]. 			
