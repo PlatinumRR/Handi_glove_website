@@ -68,10 +68,31 @@
 							<img src="jiaen_img/msp430datasheet.png" height="150" width="800">
 							<p>In order to complete the software overview, I have also looked into my previous project in ECE 362 to refresh on my embedded C code. I did some research about the structure of communication packets that are going to be transmitting between microcontrollers. </p>
 							<p>Besides, I created a flow chart for software architecture. The logic flow becomes much clearer after laying the flow chart. I believe that it also benefits the reader to understand better about how the code works. Other than that, I have created state diagram to describe each state of the overall system. This will also come in handy when we actually started coding. Lastly, my team and I started testing each module we currently possess to make sure each and every one is working correctly. We tested the time taken and power needed for Peltier Cooler to generate temperature difference. We also make sure that linear actuator, servo, and robotic hand work.</p>
-							<img src="jiaen_img/peltier_testing.jpg" height="400" width="500">
-							<img src="jiaen_img/linearactuator_testing.jpg" height="400" width="500">
+							<img src="jiaen_img/ref_code.png" height="400" width="500">
 						</div>
-					</div>				
+					</div>			
+					<div class="box">
+						<div class="content">
+							<header class="align-center">
+								<h2>Week Four Report</h2>
+							</header>
+							<p>This week our team set up the environment for STM32L4 microcontroller. We tested using GPIO to toggle two LEDs on the board. However we are going to use STM32L1 for our project instead because STM32L1 provides more ADC pins that we needed to control each robotic fingers. Although the microcontroller we are testing right now is different with what we are going to use for the project, STM32 line of microcontrollers will have similar structure of program, thus we do not have to worry about familiarize ourselves with new set of programming tools. The challenging part will be figuring out the desire pin for different purposes and working out proper value for each module. This is also a huge portion of my time spent this week to get the microcontroller working. Besides, we spend a good amount of time to pick the best suited electronic parts(voltage regulator for servo, voltage regulator for cooler) for our project. Next, we are going to try generating temperature using Peltier Cooler via sensor input from temperature sensor. Then we will try adjusting the motor speed through PWM. I look forward to many challenging tasks next week.</p>
+							<img src="jiaen_img/voltage_regulator_digikey.png" height="200" width="800">
+							<img src="jiaen_img/gpioToggle.jpg" height="400" width="500">
+							<img src="jiaen_img/gpiocode.png" height="400" width="500">
+						</div>
+					</div>		
+					<div class="box">
+						<div class="content">
+							<header class="align-center">
+								<h2>Week Five Report</h2>
+							</header>
+							<p>This week I created 3D modelling of the robotic hand. To get the precision of each hole for bolt to go through, I measure the robotic hand by measuring tape and create the CAD model with scale. I have also created a program to verify the movement of robotic fingers. Firstly, I learned about the software to program arduino. Then made the connection for specific pin, power and ground. Then I use the Arduino Library to control the fingers’ movement via potentiometer. Eventually, the code works but somehow there is still glitch when the finger moves. Then we received help from TA to debug this issue. We found out this can be fixed by inserting a capacitor into our circuitry. Next week, we can try to implement PWM on STM32L1 to control the Linear Actuator or Peltier Cooler.</p>
+							<img src="jiaen_img/measure.jpg" height="400" width="300">
+							<img src="jiaen_img/measure2.jpg" height="400" width="300">
+							<img src="jiaen_img/cadrobothand.png" height="400" width="300">
+						</div>
+					</div>	
 				</div>
 			</section>
 
