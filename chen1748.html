@@ -117,7 +117,8 @@ We had a big discussion in the previous weeks upon choosing the robotic hand too
 							</header>
 							<p>
 								This week, I finished drawing the PCB footpoint layout and started to write the code for analog to digital converter (ADC) module for the temperature feedback system. To achieve the temperature feedback, the temperature sensor value will be transferred to the robotic arm microcontroller via ADC. Then the microcontroller will be responsible for calculating the amount of voltage for the Peltier Module. After the calculation is done, the value will be sent as a communication packet to the other microcontroller on the glove. Upon receiving the packet, the software program will output a certain voltage value for the Peltier Module to generate appropriate heating or cooling effects. Here is my code for the ADC module that was used to implement the temperature feedback. Till now, we are still in the process of testing the temperature feedback code.
-							<span class="image left"><img src="images/adc_code.jpg" alt="" width="80", height="300"/></span>
+								<br></br>
+								<span class="image left"><img src="images/adc_code.png" alt="" width="80", height="300"/></span>
 								Goals for next week:
 My teammates and I will continue to write the STM32 ADC module's code and try to connect the microcontroller with our real Peltier Module sensor.
 								<br></br>
