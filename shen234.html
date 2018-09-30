@@ -128,6 +128,7 @@ Tension string may act as a force buffer to reduce the risk of structure failure
 							<header class="align-center">
 								<h2>Week Six Report</h2>
 								<span class="image left"><img src="images/SYD_img/3v3_s.png" alt="" /><ul>12V to 3V3 Schemetic</ul></span>
+								<span class="image left"><img src="images/SYD_img/3v3_pcb.png" alt="" /><ul>12V to 3V3 PCB</ul></span>
 								This week I finished part of the circuit for our project.
 								<br>
 								For the 12V to 3.3V regulator, I chose a switching regulator for our design. with the consideration of heat and efficiency. 
@@ -136,8 +137,8 @@ Tension string may act as a force buffer to reduce the risk of structure failure
 								<br>
 								Another two resistors are connected to VSNS pin to set the output voltage.<img src="images/SYD_img/3v3_vsns.png" alt="" style="width:210px;height:100px;"/> where the Vref = 0.8V, in our case, 3.3V output is needed and so by the calculation R5=15k, R6=4.7k.
 								<br>
-								L1=100uH is determined by <img src="images/SYD_img/3v3_l.png" alt="" style="width:100px;height:60px;"/>, where Iout is 0.1A and K is set to be 0.3 to give an average result.
-								<br><span class="image left"><img src="images/SYD_img/3v3_pcb.png" alt="" /><ul>12V to 3V3 PCB</ul></span>
+								L1=100uH is determined by <img src="images/SYD_img/3v3_l.png" alt="" style="width:300px;height:60px;"/>, where Iout is 0.1A and K is set to be 0.3 to give an average result.
+								<br>
 								On the PCB side, thermal vias are placed on the bottom of the regulator pad. Top and bottom are covered with GND plane to give a better thermal and noise shielding performance. The pin header connectors have the symmetric design and can be reversely connected.
 							</header>
 						</div>
