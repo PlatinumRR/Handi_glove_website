@@ -118,7 +118,27 @@ Tension string may act as a force buffer to reduce the risk of structure failure
 										Also, I designed a compact sensor and cooler holder for our control glove. An aluminum heat sink will be attached to Peltier cooler to dissipate heat, a heat isolation will be placed between the airbag and the heat sink to minimize the thermal expansion and contraction of the air inside the airbag system.
 										<br>
 										Next week, we will focusing on the controlling algorithms and the PCB design.
+										<br><br><br><br><br><br><br><br>
 								</p>
+						</div>
+					</div>
+
+					<div class="box">
+						<div class="content">
+							<header class="align-center">
+								<h2>Week Six Report</h2>
+								This week I finished part of the circuit for our project.
+								<br><span class="image left"><img src="images/SYD_img/3v3_s.png" alt="" /><ul>12V to 3V3 Schemetic</ul></span>
+								For the 12V to 3.3V regulator, I chose a switching regulator for our design. with the consideration of heat and efficiency. 
+								<br>
+								Serval calculations need to be performed in the circuit design. The EN pin has a typical turn-on voltage of 1.25V with the upper limit as 6V. Two resistors (150k and 51k) are used to set the EN voltage as VIN*51/(150+51).  Therefore, the acceptable input range is from 5V to 16V (12V in our design).
+								<br>
+								Another two resistors are connected to VSNS pin to set the output voltage.<img src="images/SYD_img/3v3_vsns.png" alt="" /> where the Vref = 0.8V, in our case, 3.3V output is needed and so by the calculation R5=15k, R6=4.7k.
+								<br>
+								L1=100uH is determined by <img src="images/SYD_img/3v3_l.png" alt="" />, where Iout is 0.1A and K is set to be 0.3 to give an average result.
+								<br><span class="image left"><img src="images/SYD_img/3v3_pcb.png" alt="" /><ul>12V to 3V3 PCB</ul></span>
+								On the PCB side, thermal vias are placed on the bottom of the regulator pad. Top and bottom are covered with GND plane to give a better thermal and noise shielding performance. The pin header connectors have the symmetric design and can be reversely connected.
+							</header>
 						</div>
 					</div>
 					<!--Report ends here-->
