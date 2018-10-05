@@ -102,6 +102,24 @@
 							<img src="jiaen_img/GPIOToggleCode.jpg" height="400" width="300">
 						</div>
 					</div>	
+					<div class="box">
+						<div class="content">
+							<header class="align-center">
+								<h2>Week Seven Report</h2>
+							</header>
+							<p>This week I managed to get ADC and PWM to work. I learned to set up configuration for modules like ADC and TIM. Firstly, I verify that the program receives analog input from a potentiometer and turn that into digital signal through ADC. I set up the connection and verified by using the oscilloscope. I have included pictures below to showcased the changes of ADC value in debugger. Then I change the wiring connection to test if temperature sensor work. After some minor tweaking, I made it to work.</p>
+							<img src="jiaen_img/adcvalue1.jpg" height="400" width="300">
+							<img src="jiaen_img/adcvalue2.jpg" height="400" width="300">
+							<p>After getting ADC to work, I move on to PWM. I first study PWM's configuration and ways to enable the correct timer channel. Then I found out the function to update the pwm duty cycle. I insert the function into two single for loops to test the brightness of LED. I successfully made the LED to alternate between glowing and turning off. I also verify the waveform through oscilloscope which will be proved by pictures below.</p>
+							<img src="jiaen_img/ledon.jpg" height="400" width="300">
+							<img src="jiaen_img/ledoff.jpg" height="400" width="300">
+							<p>Once I get the PWM to work, I discuss with Yaodong about how to control servo through PWM. Yaodong introduced a H-bridge circuitry for me to test PWM on servo. Then we successfully control the servo's movement. We also tweak some values like clock period, duty cycle and delay period to smoothen the motion. Code and result will be shown below.</p>
+							<img src="jiaen_img/servo1.jpg" height="400" width="300">
+							<img src="jiaen_img/servo2.jpg" height="400" width="300">
+							<img src="jiaen_img/pwmwaveform.jpg" height="400" width="300">
+							<img src="jiaen_img/pwmadccode" height="400" width="300">
+						</div>
+					</div>
 				</div>
 			</section>
 
