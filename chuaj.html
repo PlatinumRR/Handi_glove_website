@@ -125,10 +125,13 @@
 							<header class="align-center">
 								<h2>Week Nine Report</h2>
 							</header>
-							<p>This week I managed to read multiple ADC channels and set pwm using interrupts so that all servos can move simultaneously. I also managed to get linear actuator to move by experiment with the difference between two voltage inputs. I can easily code the part for linear actuator by using PWM. However we do not have enough PWM. Therefore I will use logic and GPIO Output mode to set the high time of linear actuator input voltage.</p>
+							<p>This week I managed to read multiple ADC channels and set pwm using interrupts so that all servos can move simultaneously. I also managed to get linear actuator to move by figuring out the difference between two voltage inputs. I can easily code the part for linear actuator by using PWM. However we do not have enough PWM channel. Therefore I will use logic and GPIO Output mode to set the high time of linear actuator input voltage.</p>
 							<img src="jiaen_img/twoServos.gif">
+							<br>
 							<img src="jiaen_img/twoServos.jpg" height="400" width="300">
 							<img src="jiaen_img/twoServos2.jpg" height="400" width="300">
+							<p>Below is a table that show the configuration of two inputs to manipulate linear actuator's movement. I have experimented with linear actuator's motor driver and found out that its trigger voltage is around 0.85V. Our choice of STM32 provides around 3.3V of voltage and thus there will be enough power to drive the linear actuator. Next I will need to solve the problem about the heat affection on air bag from Peltier module. Before that I will make sure that the hardware for pressure feedback system works correctly.</p>
+							<img src="jiaen_img/la.jpg" height="400" width="300">
 						</div>
 					</div>
 				</div>
