@@ -134,6 +134,18 @@
 							<img src="jiaen_img/la.jpg" height="400" width="300">
 						</div>
 					</div>
+					<div class="box">
+						<div class="content">
+							<header class="align-center">
+								<h2>Week Ten Report</h2>
+							</header>
+							<p>This week I work on pressure feedback system. The system works by pressing touch sensor to control linear actuator so that the syringe get push to increase air expansion inside of airbag. I first verify the correctness of ADC value from touch sensor and I calculate a converted value to control the linear actuator. Linear actuator works by setting 1 and 0 on two inputs. It will only extend or shrink if two inputs are different. Then it will need to extend/shrink for a period of time according to the pressure value.</p>
+							<img src="jiaen_img/pressure_la.gif">
+							<br>
+							<img src="jiaen_img/LAcode.jpg" height="400" width="300">
+							<p>Then I work with Yao Chen to implement UART. We utilized ADC interrupt to read in a potentiometer value and transmit it to the slave. Then the slave will constantly read from master using interrupt. We verified that the communication works by reading a specific ADC value from master to slave. Next I will make sure the communication works both way. Then I will start putting all features together and see if there is any delay.</p>
+						</div>
+					</div>
 				</div>
 			</section>
 
