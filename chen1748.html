@@ -139,6 +139,32 @@ My teammates and I will continue to write the STM32 ADC module's code and try to
 							</p>
 						</div>
 					</div>
+					<div class="box">
+                                                <div class="content">
+                                                        <header class="align-center">
+                                                                <h2>Week nine Report</h2>
+                                                        </header>
+                                                        <p>
+								Last week, I began working on the communication module. I first proposed to implement the SPI protocol but then realized that UART is a more straightforward approach. I first tested a few HAL functions including transmitting and receiving in both blocking and non-blocking fashion. Although there is no much difference in my small experiment, the online research online stated that interrupt-driven approach can have higher efficiency in a large project, especially the one like us where lots of synchronizations are involved. I tested the UART with FT232 and PC. With the baud rate and other configuration set up correctly, the board can communicate with PC without error.
+                                                                <br></br>
+                                                                <span class="image fit"><img src="images/UART1.jpeg" alt="" width="120", height="300"/></span>
+                                                                Goals for next week:
+								The goal for next week is trying to have two boards communicate with each other.<br></br>
+                                                        </p>
+                                                </div>
+                                        </div>
+ 					`<div class="box">
+                                                <div class="content">
+                                                        <header class="align-center">
+                                                                <h2>Week ten Report</h2>
+                                                        </header>
+                                                        <p>
+                                                                <span class="image left"><img src="images/UART2.jpeg" alt="" width="120", height="300"/></span>
+                                                                Last week, I mainly contributed to use UART communication module to transmit and receive data with two different board. At first, I set up two separate boards to transmit the ADC signal from transmitter board to receiver board and then confirm on the computer that both sides have transmitted and received correctly via the buffer status. Then, I twisted the knob on the potentiometer to produce ADC  value ranges from 0 to 4000.  The transmitter then sends the real-time ADC value to the receiver on the other board to finish the communication process. I also resolved the library conflict issue of the STM32L1 driver that previously disallowed me installing on school computer system. After that, now I can monitor transmitter and receiver activities on two separate computers. Below is a code snippet of the UART transmitter and receiver and testing photos.<br></br>
+                                                                Goals for next week:
+                                                        	Use two communication boards to control servo.</p>
+                                                </div>
+                                        </div>
 					<!--Report ends here-->
 					<!--That is one report-->
 					<!--
