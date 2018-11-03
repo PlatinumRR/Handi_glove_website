@@ -148,6 +148,22 @@
 							<img src="jiaen_img/actualBoard.jpg" height="400" width="300">
 						</div>
 					</div>
+					<div class="box">
+						<div class="content">
+							<header class="align-center">
+								<h2>Week Eleven Report</h2>
+							</header>
+							<p>I encounter an issue in UART transmission with pressure feedback system this week. The program somehow terminates itself in the for loop causing the GPIO output signal to stay high.</p>
+							<img src="jiaen_img/hang.jpg" height="400" width="300">
+							<p>I tried to simulate this problem using only one microcontroller but the program seems to work perfectly fine without the use of UART.</p>
+							<img src="jiaen_img/nothang.jpg" height="400" width="300">
+							<p>Then I think that the issue might arise from the fact that master is constantly transferring data to the slave but it takes long time to finish the task in slave. This might lead to overrun error and program dies in the for loop.</p>
+							<img src="jiaen_img/slave_master.jpg" height="400" width="300">
+							<p>Thus I make the master to transfer data to slave only when slave is ready. This is achieved by sending value from slave to master to let master know its current status. However due to some unknown reason this again does not work. Now I will try to avoid using for loop and see if it solves the issue by using timer module to replace for loop.</p>
+							<img src="jiaen_img/transmitter.jpg" height="400" width="300">
+							<img src="jiaen_img/receiver.jpg" height="400" width="300">
+						</div>
+					</div>
 				</div>
 			</section>
 
