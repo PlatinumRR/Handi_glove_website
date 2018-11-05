@@ -219,19 +219,12 @@ Tension string may act as a force buffer to reduce the risk of structure failure
 								<h2>Week Ten Report</h2>
 							</header>
 							<p>
-								This week I was working to solve the UART problem.
-								<br>In experiments that we did on pressure data transmission, we found that sometimes the data received by the receiver is unreasonably large.
-								<br>I was working on a different track with Jia En. I think the transmission problem is caused by the laggy UART callback interrupt. Inside the turnLA function, JiaEn called another function using for loop to perform a delay feature. The laggy performance of this turnLA function in the interrupt caused the unpredictable result of the UART transmission. In order to make the UART callback interrupt as lightweight as possible, a flag must be used to call the turnLA function. And timmer interrupt is also required to generate the delay between turn on and off the DC motor.
-								<br>Next week we will finish the timer interrupt setup and hopefully, we will realize the touch feedback feature.
-									<div class = "row 50% uniform">
-										<div class = "6u">
-											<span class="image fit"><img src="images/SYD_img/turnLA.png"> </span>
-											<ul>UART callback interrupt</ul>
-										</div>
-										<div class = "6u$">
-											<span class="image fit"><img src="images/SYD_img/timerIRQ.png"> </span>
-											<ul>timerIRQ</ul>
-										</div>
+									This week I ordered the second set of our components
+									<br>A modification has been made on the cooler driver circuit: LM393QT(2 comparators) is chosen to replace INA146(diff amp) with the consideration of cost and circuit complexity.
+									<br>I also prototyped the Peltier cooler controlling circuit with the new HP8K22(2N-MOS Half-bridge) and comparators. In the experiment, when 2A current was loaded on the Peltier cooler, the total voltage drop across the H-bridge is only 0.3V. The power dispassion on the H-bridge far below the package 3W limit, and the previous H-bridge's 2.6W result. With the circuit continuously loaded for 3 minutes, the temperature rising on the chip still cannot be noticed by bare hand.
+									<div>
+											<span class="image fit"><img src="images/SYD_img/cooler_circuit_v2.png"> </span>
+											<ul>Cooler Driver V2</ul>
 									</div>
 							</p>
 						</div>
@@ -245,11 +238,17 @@ Tension string may act as a force buffer to reduce the risk of structure failure
 							<p>
 								This week I was working to solve the UART problem.
 								<br>In experiments that we did on pressure data transmission, we found that sometimes the data received by the receiver is unreasonably large.
-								<br>I was working on a different track with Jia En. I think the transmission problem is caused by the laggy UART callback interrupt.<pic> Inside the turnLA function, JiaEn called another function using for loop to perform a delay feature. The laggy performance of this turnLA function in the interrupt caused the unpredictable result of the UART transmission. In order to make the UART callback interrupt as lightweight as possible, a flag must be used to call the turnLA function. And timmer interrupt is also required to generate the delay between turn on and off the DC motor.<pic>
+								<br>I was working on a different track with Jia En. I think the transmission problem is caused by the laggy UART callback interrupt. Inside the turnLA function, JiaEn called another function using for loop to perform a delay feature. The laggy performance of this turnLA function in the interrupt caused the unpredictable result of the UART transmission. In order to make the UART callback interrupt as lightweight as possible, a flag must be used to call the turnLA function. And timmer interrupt is also required to generate the delay between turn on and off the DC motor.
 								<br>Next week we will finish the timer interrupt setup and hopefully, we will realize the touch feedback feature.
-									<div>
+									<div class = "row 50% uniform">
+										<div class = "6u">
 											<span class="image fit"><img src="images/SYD_img/turnLA.png"> </span>
-											<ul>Cooler Driver V2</ul>
+											<ul>UART Callback Interrupt</ul>
+										</div>
+										<div class = "6u$">
+											<span class="image fit"><img src="images/SYD_img/timerIRQ.png"> </span>
+											<ul>Timer interrupt</ul>
+										</div>
 									</div>
 							</p>
 						</div>
