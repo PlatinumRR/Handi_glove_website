@@ -164,6 +164,18 @@
 							<img src="jiaen_img/receiver.jpg" height="300" width="500">
 						</div>
 					</div>
+					<div class="box">
+						<div class="content">
+							<header class="align-center">
+								<h2>Week Twelve Report</h2>
+							</header>
+							<p>This week I finally solve the problem of program hangs in pressure feedback system. The issue arises from the microcontroller on robot hand's side keep sending value before the initialization of the code in microcontroller on glove's side. Therefore, I set a delay on the robot hand's microcontroller so that it start sending value once the glove's microcontroller is ready. In addition, I also migrate all code from discovery board to the real board that we are using which is STM32L152ZET6. There was issue with the programmer not recognizing the real board. But Yaodong and Joel figured out that the Vref+ is not connected with Vref-. Then I need to verify every features that I created on Discovery board also works on the real board. After that, I work on setting 5 linear actuators to work together. I got rid of ADCPollConversion() function and set up DMA instead to collect all ADC values because poll method gives random ranges for each sensors. After several days of work, I finally get multiple linear actuators and servos work together on the actual board. Please visit "https://github.com/JiaEnChua/Handi_glove_software" for the code. Once the PCB arrives and exoskeleton of the glove finishes, I believe that we will be able to check off 2 PSSC.</p>
+							<img src="jiaen_img/receiver_2LAs.jpg" height="300" width="500">
+							<img src="jiaen_img/transmitter_2LAs.jpg" height="300" width="500">
+							<img src="jiaen_img/2LAs.jpg" height="300" width="500">
+
+						</div>
+					</div>
 				</div>
 			</section>
 
