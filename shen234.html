@@ -229,6 +229,56 @@ Tension string may act as a force buffer to reduce the risk of structure failure
 							</p>
 						</div>
 					</div>
+
+					<div class="box">
+						<div class="content">
+							<header class="align-center">
+								<h2>Week Eleven Report</h2>
+							</header>
+							<p>
+								This week I was working to solve the UART problem.
+								<br>In experiments that we did on pressure data transmission, we found that sometimes the data received by the receiver is unreasonably large.
+								<br>I was working on a different track with Jia En. I think the transmission problem is caused by the laggy UART callback interrupt. Inside the turnLA function, JiaEn called another function using for loop to perform a delay feature. The laggy performance of this turnLA function in the interrupt caused the unpredictable result of the UART transmission. In order to make the UART callback interrupt as lightweight as possible, a flag must be used to call the turnLA function. And timmer interrupt is also required to generate the delay between turn on and off the DC motor.
+								<br>Next week we will finish the timer interrupt setup and hopefully, we will realize the touch feedback feature.
+									<div class = "row 50% uniform">
+										<div class = "6u">
+											<span class="image fit"><img src="images/SYD_img/turnLA.png"> </span>
+											<ul>UART Callback Interrupt</ul>
+										</div>
+										<div class = "6u$">
+											<span class="image fit"><img src="images/SYD_img/timerIRQ.png"> </span>
+											<ul>Timer interrupt</ul>
+										</div>
+									</div>
+							</p>
+						</div>
+					</div>
+
+					<div class="box">
+						<div class="content">
+							<header class="align-center">
+								<h2>Week Twlve Report</h2>
+							</header>
+							<p>
+								This week I finished the mechanical design of the whole pressure feedback system. As shown in the picture, the linear actuator is placed in its hoster, a clip is used to connect the syringe and the linear actuator. Air will be conducted to the silicon airbag which placed in the fingertip sensor holder by a thin silicone rubber tube. When the airbag expands, the heatsink and the Peltier cooler will be pushed up to apply pressure to user's finger. A temperature sensor is placed between the user's finger and Peltier cooler to monitor the temperature feedback, and an optional pressure sensor can be placed between the temperature sensor and cooler to monitor the pressure(touch) feedback.
+								<br>*In the fingertip sensor holder disassembly, the rightmost piece is the 3d-printed model of the heatsink. In the final product, the Peltier cooler will be glued on the heatsink with termal compounds applied in between.
+							</p>
+							<div class = "row 50% uniform">
+								<div class = "4u">
+									<span class="image fit"><img src="images/SYD_img/PressureSystem.jpg"> </span>
+									<ul>Pressure System</ul>
+								</div>
+								<div class = "4u">
+										<span class="image fit"><img src="images/SYD_img/PressureCloseup.jpg"> </span>
+										<ul>Pressure System Closeup</ul>
+								</div>
+								<div class = "4u$">
+										<span class="image fit"><img src="images/SYD_img/FingertipDisassembly.jpg"> </span>
+										<ul>Fingertip Sensor Holder Disassembly</ul>
+								</div>
+						</div>
+						</div>
+					</div>
 					<!--Report ends here-->
 					<!--That is one report-->
 					<!--
