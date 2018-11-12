@@ -165,6 +165,34 @@ My teammates and I will continue to write the STM32 ADC module's code and try to
                                                         	Use two communication boards to control servo.</p>
                                                 </div>
                                         </div>
+					<div class="box">
+                                                <div class="content">
+                                                        <header class="align-center">
+                                                                <h2>Week eleven Report</h2>
+                                                        </header>
+                                                        <p>
+                                                                <span class="image left"><img src="images/temperature.jpg" alt="" width="120", height="300"/></span>
+								Last week, I began working on using two communication modules to control pressure sensor and I also started to do the temperature feedback module. Although I have finished using the UART module to control pressure sensor, we still need to combine the motion restrain feedback module with the force feedback module. Therefore, we spliced the work where Jia En decided to improve the force feedback module and I mainly focus on temperature feedback module. At first, I followed the tutorial for the temperature module found on the official website to configure the peripherals. After that, I used the ADC to perform analog-to-digital conversions of the internal reference voltage and of the temperature sensor voltage driven by DMA. 
+                                                                Goals for next week:
+                                                                focus on the temperature feedback module</p>
+                                                </div>
+                                        </div>
+					<div class="box">
+                                                <div class="content">
+                                                        <header class="align-center">
+                                                                <h2>Week twelve Report</h2>
+                                                        </header>
+                                                        <p>
+                                                                <span class="image left"><img src="images/temperaturei1.png" alt="" width="120", height="300"/></span>
+								Last week, I mainly did the temperature feedback part for the project. I created a function which can transfer the ADC value to the real temperature value. Although there exist some error with real temperature value with the calculated one, we can adjust the number in the temperature function to close the real one. I can read the temperature value in the buffer right now. Here are the room temperature value and the temperature of warm water. 
+
+                                                                Goals for next week:
+								In the next week, I want to use UART to communicate the more cooling module value with the temperature sensor value. And try to do the test on our real glove equipment.
+                                                                <span class="image center"><img src="images/temperaturei2.png" alt="" width="120", height="300"/></span>
+                                                        </p>
+                                                </div>
+                                        </div>
+
 					<!--Report ends here-->
 					<!--That is one report-->
 					<!--
@@ -185,11 +213,9 @@ My teammates and I will continue to write the STM32 ADC module's code and try to
 			</section>
 
 
-		<!-- Footer -->
 			<footer id="footer">
 				<div class="copyright">
 					All rights reserved.
-				<div class="copyright">
 					Fall 2018 ECE 477 Team 07
 				<div class="copyright">
 					Website designed basing on Hielo by TEMPLATE, modified by Yaodong Shen
