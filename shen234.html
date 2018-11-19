@@ -257,7 +257,7 @@ Tension string may act as a force buffer to reduce the risk of structure failure
 					<div class="box">
 						<div class="content">
 							<header class="align-center">
-								<h2>Week Twlve Report</h2>
+								<h2>Week Twelve Report</h2>
 							</header>
 							<p>
 								This week I finished the mechanical design of the whole pressure feedback system. As shown in the picture, the linear actuator is placed in its hoster, a clip is used to connect the syringe and the linear actuator. Air will be conducted to the silicon airbag which placed in the fingertip sensor holder by a thin silicone rubber tube. When the airbag expands, the heatsink and the Peltier cooler will be pushed up to apply pressure to user's finger. A temperature sensor is placed between the user's finger and Peltier cooler to monitor the temperature feedback, and an optional pressure sensor can be placed between the temperature sensor and cooler to monitor the pressure(touch) feedback.
@@ -275,6 +275,49 @@ Tension string may act as a force buffer to reduce the risk of structure failure
 								<div class = "4u$">
 										<span class="image fit"><img src="images/SYD_img/FingertipDisassembly.jpg"> </span>
 										<ul>Fingertip Sensor Holder Disassembly</ul>
+								</div>
+						</div>
+						</div>
+					</div>
+
+					<div class="box">
+						<div class="content">
+							<header class="align-center">
+								<h2>Week Thirteen Report</h2>
+							</header>
+							<p>
+									This week I mostly worked on populating our robotic hand controlling board and glove controlling board. Since electrolytic capacitors are close to each other and voltage regulators have power pad underneath, I soldered those components with solder paste and reflow oven in the very first step. According to the datasheet of SMDLTLFP10 solder, the temperature curve of the reflow oven had been set as F7(165 Celsius degrees). The second step was populating the 12v to 3.3v module. After completing the power module, I used an oscilloscope to make sure the 3.3v Vdd is stable and free of noise. Then the microcontroller and its decoupling capacitors and resistors were populated. After this step, I washed, dried the PCB, and checked all the soldering connections are clean and free of bridging. Then a simple blink LED program was programmed to the microcontroller in order to test its functionality. The 6.8V servo power regulators were the last part of populating the PCB.
+									<br>
+									The sensor input and servo/actuator functions were tested this week and a dead servo power module was found. Except that, all the other module are working well.
+									<br>
+									In the next week, I will focus on soldering the rest two boards and fixing the dead power module.		
+							</p>
+							<div class = "row 50% uniform">
+								<div class = "4u">
+									<span class="image fit"><img src="images/SYD_img/PCB.jpg"> </span>
+									<ul>PCB Boards</ul>
+								</div>
+								<div class = "4u">
+										<span class="image fit"><img src="images/SYD_img/hand_pcb.jpg"> </span>
+										<ul>Robotic Hand Controlling Board</ul>
+								</div>
+								<div class = "4u$">
+										<span class="image fit"><img src="images/SYD_img/glove_pcb.jpg"> </span>
+										<ul>Glove Controlling Board</ul>
+								</div>
+						</div>
+						<div class = "row 50% uniform">
+								<div class = "4u">
+									<span class="image fit"><img src="images/SYD_img/blink_test.jpg"> </span>
+									<ul>Blink Test</ul>
+								</div>
+								<div class = "4u">
+										<span class="image fit"><img src="images/SYD_img/good_power_module.jpg"> </span>
+										<ul>Good Servo Power Module</ul>
+								</div>
+								<div class = "4u$">
+										<span class="image fit"><img src="images/SYD_img/dead_power_module.jpg"> </span>
+										<ul>Wrong Output On Servo Power Module</ul>
 								</div>
 						</div>
 						</div>
