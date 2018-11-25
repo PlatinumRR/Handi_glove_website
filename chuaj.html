@@ -175,6 +175,18 @@
 							<img src="jiaen_img/2LAs.jpg" height="400" width="300">
 						</div>
 					</div>
+					<div class="box">
+						<div class="content">
+							<header class="align-center">
+								<h2>Week Thirtheen Report</h2>
+							</header>
+							<p>This week I setup the whole system onto PCB. Firstly, I needed to change all pins accorfing to functionalities because our the connection on PCB is designed to fit with other electronic on the board. Thus some functionalities need to use different pins than what we used on standalone chip. On the glove's side, I setup 5 ADC channels and record potentiometer values. Then I transfer these values to robotic hand's microcontroller. It will use these values to determine PWM duty cycle and hence control robotic fingers.</p>
+							<br>
+							<p>After that, I setup 5 other ADC channels on robot hand's microcontroller to receive the value of pressure sensors. Then again I transfer these value back to the glove via UART. The glove's microcontroller will then use these values to adjust linear actuators to simulate touch effect by using airbag.</p>
+							<br>
+							<p>Next, I will work on installing a sensor on the glove so that we know if the glove is empty. Then we can set the robotic finger back to default position when no user is using the glove.</p>
+						</div>
+					</div>
 				</div>
 			</section>
 
