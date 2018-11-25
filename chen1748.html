@@ -165,13 +165,60 @@ My teammates and I will continue to write the STM32 ADC module's code and try to
                                                         	Use two communication boards to control servo.</p>
                                                 </div>
                                         </div>
-					<!--Report ends here-->
-					<!--That is one report-->
-					<!--
 					<div class="box">
-						<div class="content">
-							<header class="align-center">
-								<p>maecenas sapien feugiat ex purus</p>
+                                                <div class="content">
+                                                        <header class="align-center">
+                                                                <h2>Week eleven Report</h2>
+                                                        </header>
+                                                        <p>
+                                                                <span class="image left"><img src="images/temperature.jpg" alt="" width="120", height="300"/></span>
+								Last week, I began working on using two communication modules to control pressure sensor and I also started to do the temperature feedback module. Although I have finished using the UART module to control pressure sensor, we still need to combine the motion restrain feedback module with the force feedback module. Therefore, we spliced the work where Jia En decided to improve the force feedback module and I mainly focus on temperature feedback module. At first, I followed the tutorial for the temperature module found on the official website to configure the peripherals. After that, I used the ADC to perform analog-to-digital conversions of the internal reference voltage and of the temperature sensor voltage driven by DMA. 
+                                                                Goals for next week:
+                                                                focus on the temperature feedback module</p>
+                                                </div>
+                                        </div>
+					<div class="box">
+                                                <div class="content">
+                                                        <header class="align-center">
+                                                                <h2>Week twelve Report</h2>
+                                                        </header>
+                                                        <p>
+                                                                <span class="image left"><img src="images/temperature1.png" alt="" width="120", height="300"/></span>
+								Last week, I mainly did the temperature feedback part for the project. I created a function which can transfer the ADC value to the real temperature value. Although there exist some error with real temperature value with the calculated one, we can adjust the number in the temperature function to close the real one. I can read the temperature value in the buffer right now. Here are the room temperature value and the temperature of warm water. 
+
+                                                                Goals for next week:
+								In the next week, I want to use UART to communicate the more cooling module value with the temperature sensor value. And try to do the test on our real glove equipment.
+                                                        </p>
+							<span class="image center"><img src="images/temperature2.png" alt="" width="620", height="300"/></span>
+                                                </div>
+                                        </div>
+					<div class="box">
+                                                <div class="content">
+                                                        <header class="align-center">
+                                                                <h2>Week thirteen Report</h2>
+                                                        </header>
+                                                        <p>
+								<span class="image left"><img src="images/h_bridge.jpeg" alt="" width="620", height="300"/></span>	
+								Last week, I finished the temperature sensor reading. At this stage, the STM32 can finally read the correct temperature value.  Also, I tested the temperature sensor in both heating and cooling conditions with hair dryer and ice water, respectively. The temperature reading function also has the logic to restrain temperature reading to be under 100 degree Celsius, in order to protect the user from burning the skin. Since our new H-bridge device has just arrived last week, I also tested the H-bridge and incorporated it in the temperature feedback block to form the feedback loop.  The H-bridge is used to control the Peltier cooler to produce whether positive temperature or negative temperature.
+                                                        </p>
+							<br><br/>
+							<p>
+								Goals for next week:
+							</p>
+							<br><br/>
+							<p>
+								Next week, I will continue working on the temperature feedback,  and hopefully, have this block done.
+							</p>
+					</div>
+				</div>
+
+				<!--Report ends here-->
+				<!--That is one report-->
+				<!--
+				<div class="box">
+					<div class="content">
+						<header class="align-center">
+							<p>maecenas sapien feugiat ex purus</p>
 								<h2>Lorem ipsum dolor</h2>
 							</header>
 							<p><span class="image left"><img src="images/pic02.jpg" alt="" /></span>Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Vestibulum ante ipsum primis in faucibus magna blandit adipiscing eu felis iaculis volutpat lorem ipsum dolor sit amet dolor consequat.</p>
@@ -185,11 +232,9 @@ My teammates and I will continue to write the STM32 ADC module's code and try to
 			</section>
 
 
-		<!-- Footer -->
 			<footer id="footer">
 				<div class="copyright">
 					All rights reserved.
-				<div class="copyright">
 					Fall 2018 ECE 477 Team 07
 				<div class="copyright">
 					Website designed basing on Hielo by TEMPLATE, modified by Yaodong Shen
