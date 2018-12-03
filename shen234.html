@@ -322,6 +322,36 @@ Tension string may act as a force buffer to reduce the risk of structure failure
 						</div>
 						</div>
 					</div>
+
+					<div class="box">
+						<div class="content">
+							<header class="align-center">
+								<h2>Week Fifteen Report</h2>
+							</header>
+							<p>
+									At the beginning of this week, I finished populating and debugging all the 4 PCBs. Two main controller boards all had been found microcontroller internal power supply short circuit after leaving them connected to an idle power supply unit for a long time. Both microcontrollers had been replaced and new microcontrollers had been reordered in case of future issues. 
+									<br>
+									I was also working on developing a temperature feedback algorithm. It is basing on the PID control concept, where "P" stands for "Proportional", "I" stands for "Integral", and "D" stands for "Differential". In a closed loop linear system, with the PID control, the controlling output should be the sum of each portion of the system error. In our system, due to the laggy performance of Peltier cooler, the differential part is unnecessary. Also, because the thermistor has an unlinear relation between temperature and resistance, I also did experiments, summarized its performance with an equation, and generated a table to linearize the thermistor data to feed as the input of my PID control algorithm.
+									<br>
+									Next week, our job will be packaging the product and improving the existing code.
+
+							</p>
+							<div class = "row 50% uniform">
+								<div class = "4u">
+									<span class="image fit"><img src="images/SYD_img/PIDsystemFromWiki.png"> </span>
+									<ul>PID control System (WikiPedia)</ul>
+								</div>
+								<div class = "4u">
+										<span class="image fit"><img src="images/SYD_img/RvsT.png"> </span>
+										<ul>Thermistor Experiment Result</ul>
+								</div>
+								<div class = "4u$">
+										<span class="image fit"><img src="images/SYD_img/temperatureCode.png"> </span>
+										<ul>Temperature Control</ul>
+								</div>
+						</div>
+						</div>
+					</div>
 					<!--Report ends here-->
 					<!--That is one report-->
 					<!--
